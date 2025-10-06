@@ -176,3 +176,36 @@
     }
   </style>
 </head>
+
+<body>
+  <div class="weather-card">
+    <div class="weather-content">
+      <h2>🌍 CITRA INFO</h2>
+      <div class="search">
+        <input type="text" id="lokasiInput" placeholder="Masukkan Lokasi (cth: Yogyakarta)">
+        <button onclick="getCuaca()">GET</button>
+      </div>
+      <div id="errorMsg" class="error"></div>
+
+      <div class="icon" id="weatherIcon">☀️</div>
+
+      <div class="result">
+        Lokasi: <span id="lokasi">-</span><br>
+        Negara: <span id="negara">-</span><br>
+        Provinsi: <span id="provinsi">-</span><br>
+        Kecamatan: <span id="kecamatan">-</span><br>
+        Suhu: <span id="suhu">-</span> °C<br>
+        Latitude: <span id="latitude">-</span><br>
+        Longitude: <span id="longitude">-</span>
+      </div>
+
+      <div class="thermo">
+        <div class="thermo-fill" id="thermoFill"></div>
+      </div>
+
+      <div class="extra">
+        <div>💨 Angin: <span id="wind">-</span> kph</div>
+        <div>💧 Humidity: <span id="humidity">-</span>%</div>
+      </div>
+    </div>
+  </div>
