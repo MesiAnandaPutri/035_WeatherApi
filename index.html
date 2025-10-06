@@ -282,3 +282,15 @@
       });
     }
 
+    
+    function showError(message) {
+      document.getElementById("errorMsg").innerText = message;
+      ["lokasi","negara","provinsi","kecamatan","suhu","latitude","longitude","wind","humidity"]
+        .forEach(id => document.getElementById(id).innerText = "-");
+      document.getElementById("weatherIcon").innerText = "⚠️";
+      document.getElementById("thermoFill").style.width = "0%";
+      setBackground("error", true);
+    }
+  </script>
+</body>
+</html>
